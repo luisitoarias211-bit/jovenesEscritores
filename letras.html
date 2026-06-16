@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letras Jovenes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Letras<span>Jóvenes</span></div>
+        <ul>
+            <li><a href="#por-que">Por qué escribir</a></li>
+            <li><a href="#comunidad">Obras</a></li>
+            <li><a href="#guias">Guías</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="floating-letters" id="floatingLetters"></div>
+
+        <div class="hero-tag">✦ Para jóvenes que tienen algo que decir</div>
+        <h1>Tu historia <em>merece</em> ser escrita</h1>
+        <p>Letras Jóvenes es el espacio donde la creatividad, la literatura y la voz propia se encuentran. Escribe, comparte, crece — con una comunidad que te entiende.</p>
+        <div class="hero-actions">
+            <a href="formulario.html" class="btn-primary">Empieza a escribir →</a>
+            <a href="#guias" class="btn-secondary">Ver guías →</a>
+        </div>
+
+        <div class="typewriter-wrap">
+            <div class="tw-header">
+                <div class="tw-dot"></div>
+                <div class="tw-dot"></div>
+                <div class="tw-dot"></div>
+            </div>
+            <div id="typewriter-text"></div><span class="cursor"></span>
+        </div>
+    </section>
+
+    <section id="por-que">
+        <span class="section-tag">Por qué importas</span>
+        <h2 class="section-title reveal">Escribir no es un hobby. <br>Es una forma de <em style="font-style:italic; color:var(--violet-light)">exixtir</em>.</h2>
+        <p class="section-sub reveal">La escritura desarrolla habilidades que nadiete puede quitar:
+            pensamiento crítico, empatía, comunicación y autoconocimiento. Y también es, sencillamente, liberadora.
+        </p>
+
+        <div class="why-grid reveal">
+            <div class="why-card">
+                <span class="why-icon">✍️</span>
+                <h3>Encuntra tu voz</h3>
+                <p>Escribir es el acto más honesto de autodescubrimiento. En cada párrafo, aprendes algo nuevo sobre lo que piensas y sientes.</p>
+            </div>
+            <div class="why-icon">
+                <span class="why-icon">🧠</span>
+                <h3>Agudiza tu mente</h3>
+                <p>Redactar con precisión entrena tu capacida de argumentar, analizar y comunicar ideas complejas con claridad.</p>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">🌍</span>
+                <h3>conecta con el mundo</h3>
+                <p>Las mejores historias atraviesan fronteras. tu perspectiva, desde donde estés, tienes valor universal.</p>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">📚</span>
+                <h3>Lee mejor, escribe mejor</h3>
+                <p>La literatura te expone a mundos, épocas y voces que amplían tu vocabulario emocional e intelectual.</p>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">🔥</span>
+                <h3>Procesa lo que sientes</h3>
+                <p>El diario, el poema, el cuento corto: todos son formas de darle forma al caos interior y transformarlo en algo bello.</p>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">🏆</span>
+                <h3>Abre puertas reales</h3>
+                <p>Saber escribir bien es una de las habilidades más valoradas en cualquier carrera, empresa o proyecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding-top:0;">
+        <span class="section-tag">Explora géneros</span>
+        <h2 class="section-title reveal" style="max-width:30ch;">¿De qué quieres escribir hoy?</h2>
+        <div class="generos-wrap reveal" id="generosTags">
+            <span class="genero-tag active">Todos</span>
+            <span class="genero-tag">Poesía</span>
+            <span class="genero-tag">Cuento corto</span>
+            <span class="genero-tag">Novela</span>
+            <span class="genero-tag">Crónica</span>
+            <span class="genero-tag">Ensayo</span>
+            <span class="genero-tag">Ciencia ficción</span>
+            <span class="genero-tag">Terror</span>
+            <span class="genero-tag">Romance</span>
+            <span class="genero-tag">Thriller</span>
+            <span class="genero-tag">Fantasía</span>
+            <span class="genero-tag">Slam poetry</span>
+            <span class="genero-tag">Microrrelato</span>
+            <span class="genero-tag">Autobiografía</span>
+        </div>
+    </section>
+
+    <section id="guias" class="guias">
+        <span class="section-tag">Aprende a redactar</span>
+        <h2 class="section-title reveal">Guías para escribir<br>en cualquier <em style="font-style:italic; color:var(--violet-light)">género literario</em></h2>
+        <p class="section-sub reveal">Desde la poesía hasta la ciencia ficción, cada género tiene sus secretos. Aquí los encontrarás.</p>
+
+        <div class="guias-filter reveal">
+            <button class="filter-btn active" data-filter="todos">Todos los géneros</button>
+            <button class="filter-btn" data-filter="narrativa">Narrativa</button>
+            <button class="filter-btn" data-filter="poesia">Poesía</button>
+            <button class="filter-btn" data-filter="ensayo">Ensayo y Crónica</button>
+            <button class="filter-btn" data-filter="generos">Géneros populares</button>
+        </div>
+
+        <div class="guias-grid" id="guiasGrid">
+
+            <div class="guia-card visible-card reveal" data-cat="narrativa">
+                <div class="guia-header">
+                    <div class="guia-icon">📖</div>
+                    <div class="guia-meta">
+                        <div class="guia-genero">Narrativa</div>
+                        <h3>Cuento corto</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>El cuento es un golpe único: entra rápido, impacta fuerte y cierra sin dejar escapatoria. Cada palabra cuenta.</p>
+                    <ul class="guia-tips">
+                        <li><span class="tip-bullet">→</span> Empieza en el momento de mayor tensión, no antes.</li>
+                        <li><span class="tip-bullet">→</span> Un solo conflicto central, sin subtramas que distraigan.</li>
+                        <li><span class="tip-bullet">→</span> El final debe sorprender pero también parecer inevitable.</li>
+                        <li><span class="tip-bullet">→</span> Limita los personajes: dos o tres es suficiente.</li>
+                        <li><span class="tip-bullet">→</span> Revisa siempre el primer y último párrafo — son los que más recordarán.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guia-card visible reveal" data-cat="narrativa">
+                <div class="guia-header">
+                    <div class="guia-icon">📚</div>
+                    <div class="guia-meta">
+                        <div class="guia-genero">Narrativa</div>
+                        <h3>Novela</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>La novela es un mundo construido ladrillo a ladrillo. La clave está en la planificación sin perder la espontaneidad.</p>
+                    <ul class="guia-tips">
+                        <li><span class="tip-bullet">→</span> Define antes de escribir: premisa, arco del protagonista y final.</li>
+                        <li><span class="tip-bullet">→</span> Escribe la primera escena y el clímax antes de rellenar el medio.</li>
+                        <li><span class="tip-bullet">→</span> Cada capítulo debe terminar con una razón para seguir leyendo.</li>
+                        <li><span class="tip-bullet">→</span> Los personajes secundarios tienen su propia vida fuera de escena.</li>
+                        <li><span class="tip-bullet">→</span> Escribe mal el primer borrador — luego ya lo arreglas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guia-card visible-card reveal" data-cat="narrativa">
+                <div class="guia-header">
+                    <div class="guia-icon">⚡</div>
+                    <div class="guia-meta">
+                        <div class="guia-genero">Narrativa</div>
+                        <h3>Microrrelato</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>En menos de 300 palabras hay que crear un mundo, habitarlo y destruirlo. El microrrelato es el haiku de la narrativa.</p>
+                    <ul class="guia-tips">
+                        <li><span class="tip-bullet">→</span> El título forma parte del texto — úsalo para ganar espacio.</li>
+                        <li><span class="tip-bullet">→</span> Cada palabra que no sea esencial, elimínala sin piedad.</li>
+                        <li><span class="tip-bullet">→</span> El giro o la imagen final lo es todo.</li>
+                        <li><span class="tip-bullet">→</span> Usa lo que no dices tanto como lo que dices.</li>
+                        <li><span class="tip-bullet">→</span> Prueba empezar por el final y trabajar hacia atrás.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guia-card visible-card reveal" data-cat="poesia">
+                <div class="guia-header">
+                    <div class="guia-icon">🌙</div>
+                    <div class="guia-meta">
+                        <div class="guia-genero">Poesía</div>
+                        <h3>Poema en verso libres</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>Sin rima ni métrica obligatoria, el verso libre exige aún más rigor: cada salto de línea es una decisión consciente.</p>
+                    <ul class="guia-tips">
+                        <li><span class="tip-bullet">→</span> Usa imágenes concretas, no emociones abstractas.</li>
+                        <li><span class="tip-bullet">→</span> El corte de línea crea pausa y énfasis — úsalo con intención.</li>
+                        <li><span class="tip-bullet">→</span> Lee el poema en voz alta: el oído es tu mejor editor.</li>
+                        <li><span class="tip-bullet">→</span> Evita los clichés: "corazón roto", "alma gemela", busca lo inesperado.</li>
+                        <li><span class="tip-bullet">→</span> La repetición de palabras clave puede ser un recurso, no un error.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guia-card visible-card reveal" data-cat="poesia">
+                <div class="guia-header">
+                    <div class="guia-icon">🎤</div>
+                    <div class="guia-meta">
+                        <div class="guia-genero">Poesía</div>
+                        <h3>Slam poetry</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>El slam es poesía para escuchar, no solo para leer. La voz, el cuerpo y el ritmo son parte del texto.</p>
+                    <ul class="guias-tips">
+                        <li><span class="tip-bullet">→</span> Escribe para ser escuchado: frases cortas, golpes de sonido.</li>
+                        <li><span class="tip-bullet">→</span> Habla desde lo personal — la autenticidad conecta más que la técnica.</li>
+                        <li><span class="tip-bullet">→</span> Practica el ritmo golpeando la mesa mientras lees.</li>
+                        <li><span class="tip-bullet">→</span> Usa la repetición anafórica para construir intensidad.</li>
+                        <li><span class="tip-bullet">→</span> El silencio en escena tiene el mismo peso que las palabras.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guia-card visibles-card reveal" data-cat="poesia">
+                <div class="guia-header">
+                    <div class="guia-icon">🌸</div>
+                    <div class="guias-meta">
+                        <div class="guia-genero">Poesía</div>
+                        <h3>Haiku</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>Tres líneas, diecisiete sílabas, y la eternidad de un instante. El haiku captura lo que el ojo ve antes de que la mente piense.</p>
+                    <ul class="guia-tips">
+                        <li><span class="tip-bullet">→</span> Estructura: 5 - 7 - 5 sílabas (en japonés; en español, es flexible).</li>
+                        <li><span class="tip-bullet">→</span> Describe un momento sensorial, no una idea.</li>
+                        <li><span class="tip-bullet">→</span> Incluye un "kireji" o corte: un contraste o giro entre líneas.</li>
+                        <li><span class="tip-bullet">→</span> Nada de adjetivos innecesarios — deja que la imagen hable.</li>
+                        <li><span class="tip-bullet">→</span> Ancla el haiku en la naturaleza o en lo cotidiano.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guia-card visible-card reveal" data-cat="ensayo">
+                <div class="guia-header">
+                    <div class="guia-icon">✍️</div>
+                    <div class="guias-meta">
+                        <div class="guia-genero">Ensayo y Crónica</div>
+                        <h3>Ensayo literario</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>El ensayo es una conversación inteligente contigo mismo y con el lector. Tu voz y tu argumento son el centro.</p>
+                    <ul class="guia-tips">
+                        <li><span class="tip-bullet">→</span> Comienza con una pregunta que genuinamente no sabes responder.</li> 
+                        <li><span class="tip-bullet">→</span> Tu tesis debe poder contestarse en una oración clara.</li>
+                        <li><span class="tip-bullet">→</span> Alterna argumentos con ejemplos, anécdotas o citas.</li>
+                        <li><span class="tip-bullet">→</span> Anticipa y responde las objeciones al final.</li>
+                        <li><span class="tip-bullet">→</span> El cierre debe abrirse hacia algo mayor, no simplemente resumir.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guia-card visible-card reveal" data-cat="ensayo">
+                <div class="guia-header">
+                    <div class="guia-icon">🗞️</div>
+                    <div class="guia-meta">
+                        <div class="guia-genero">Ensayo y Crónica</div>
+                        <h3>Crónica</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>La crónica narra hechos reales con técnica literaria. Es periodismo con alma de cuento.</p>
+                    <ul class="guia-tips">
+                        <li><span class="tip-bullet">→</span> Investiga primero, escribe después — los detalles son el alma.</li>
+                        <li><span class="tip-bullet">→</span> Construye escenas como en la ficción: lugar, personajes, tensión.</li>
+                        <li><span class="tip-bullet">→</span> Muestra, no cuentes: deja que los hechos hablen.</li>
+                        <li><span class="tip-bullet">→</span> Tu voz como cronista debe estar presente pero no interponerse.</li>
+                        <li><span class="tip-bullet">→</span> El tiempo puede ir y volver — no tienes que ser lineal.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guia-card visible-card reveal" data-cat="ensayo">
+                <div class="guia-header">
+                    <div class="guia-icon">🪞</div>
+                    <div class="guia-meta">
+                        <div class="guia-genero">Ensayo y Crónica</div>
+                        <h3>Autobiografía y diario</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>Escribir sobre uno mismo exige la mayor honestidad. La verdad bien contada siempre es universal.</p>
+                    <ul class="guia-tips">
+                        <li><span class="tip-bullet">→</span> No busques quedar bien — los defectos hacen al narrador creíble.</li>
+                        <li><span class="tip-bullet">→</span> Elige momentos específicos, no resúmenes de tu vida.</li>
+                        <li><span class="tip-bullet">→</span> El "yo" que narra no es exactamente el "yo" que vivió.</li>
+                        <li><span class="tip-bullet">→</span> Usa los sentidos para anclar el recuerdo en el cuerpo.</li>
+                        <li><span class="tip-bullet">→</span> Lo que no recuerdas con precisión también puede narrarse.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guia-card visible-card reveal" data-cat="generos">
+                <div class="guia-header">
+                    <div class="guia-icon">🚀</div>
+                    <div class="guia-meta">
+                        <div class="guia-genero">Géneros populares</div>
+                        <h3>Ciencia ficción</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>La ciencia ficción pregunta "¿qué pasaría si…?" y construye mundos donde esa pregunta tiene consecuencias reales.</p>
+                    <ul class="guia-tips">
+                        <li><span class="tip-bullet">→</span> Define una sola idea central especulativa y explórala a fondo.</li>
+                        <li><span class="tip-bullet">→</span> Muestra la tecnología o el mundo a través de cómo lo usan los personajes.</li>
+                        <li><span class="tip-bullet">→</span> Las mejores historias de CF hablan del presente disfrazado de futuro.</li>
+                        <li><span class="tip-bullet">→</span> Crea reglas para tu mundo y no las rompas sin justificación.</li>
+                        <li><span class="tip-bullet">→</span> El corazón sigue siendo humano: emociones, miedos, dilemas éticos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guia-card visible-card reveal" data-cat="generos">
+                <div class="guia-header">
+                    <div class="guia-icon">🕯️</div>
+                    <div class="guia-meta">
+                        <div class="guia-genero">Géneros populares</div>
+                        <h3>Terror</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>El terror efectivo no asusta con lo que muestra, sino con lo que sugiere. La imaginación del lector es tu aliada.</p>
+                    <ul class="guia-tips">
+                        <li><span class="tip-bullet">→</span> Construye tensión antes del susto — no empieces con el monstruo.</li>
+                        <li><span class="tip-bullet">→</span> Haz que el lector quiera a los personajes antes de ponerlos en peligro.</li>
+                        <li><span class="tip-bullet">→</span> Lo cotidiano vuelto extraño aterra más que lo explícitamente sobrenatural.</li>
+                        <li><span class="tip-bullet">→</span> Usa frases cortas para acelerar el ritmo en los momentos de clímax.</li>
+                        <li><span class="tip-bullet">→</span> El final no tiene que resolverlo todo — la ambigüedad es aterradora.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guia-card visible-card reveal" data-cat="generos">
+                <div class="guia-header">
+                    <div class="guia-icon">💌</div>
+                    <div class="guia-meta">
+                        <div class="guia-genero">Géneros populares</div>
+                        <h3>Romance</h3>
+                    </div>
+                </div>
+                <div class="guia-body">
+                    <p>El romance depende de la tensión entre lo que los personajes sienten y lo que no se atreven a decirse.</p>
+                    <ul class="guia-tips">
+                        <li><span class="tip-bullet">→</span> El obstáculo entre los personajes debe ser creíble, no forzado.</li>
+                        <li><span class="tip-bullet">→</span> La química se construye en los pequeños detalles y gestos.</li>
+                        <li><span class="tip-bullet">→</span> Escribe personajes que existen más allá de su relación amorosa.</li>
+                        <li><span class="tip-bullet">→</span> El diálogo íntimo es donde el romance se gana o se pierde.</li>
+                        <li><span class="tip-bullet">→</span> El clímax emocional importa más que cualquier escena dramática.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="comunidad" class="obras-section">
+        <span class="section-tag">Escritura de la comunidad</span>
+        <h2 class="section-title reveal">Lo que están <em style="font-style:italic; color:var(--violet-light)">creando</em> los jóvenes</h2>
+        <p class="section-sub reveal">Obras reales escritas por miembros de Letras Jóvenes. Cada texto, su género y su autor.</p>
+
+        <div class="obras-grid">
+            <div class="obra-card reveal">
+                <span class="obra-genero-badge" style="background:rgba(139,92,246,0.15); color:#a78bfa;">🌙 Poesía</span>
+                <h3>El silencio también sangra</h3>
+                <p class="obra-fragmento">"Hay palabras que no se dicen / porque el aire no las aguanta. / Las guardo debajo de la lengua / como semillas de algo que nunca germina."</p>
+                <div class="obra-autor">
+                    <div class="autor-avatar" style="background: linear-gradient(135deg,#6C3FC4,#8B5CF6);">V</div>
+                    <div class="autor-info">
+                        <div class="autor-nombre">Valentina Morales</div>
+                        <div class="autor-ciudad">Bogotá, 19 años</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="obra-card reveal">
+                <span class="obra-genero-badge" style="background:rgba(245,197,24,0.12); color:#fbbf24;">📖 Cuento corto</span>
+                <h3>La última llamada</h3>
+                <p class="obra-fragmento">"Cuando descolgó el teléfono, la voz al otro lado era la suya propia. 'No lo hagas', dijo. 'Ya sé cómo termina esto.' Él colgó. Pero igual abrió la puerta."</p>
+                <div class="obra-autor">
+                    <div class="autor-avatar" style="background: linear-gradient(135deg,#0ea5e9,#6366f1);">A</div>
+                    <div class="autor-info">
+                        <div class="autor-nombre">Andrés Torres</div>
+                        <div class="autor-ciudad">Cali, 17 años</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="obra-card reveal">
+                <span class="obra-genero-badge" style="background:rgba(34,197,94,0.12); color:#4ade80;">🗞️ Crónica</span>
+                <h3>El bus de las 5:30</h3>
+                <p class="obra-fragmento">"Nadie se mira en el bus de las 5:30. Todos llevan los ojos clavados en la nada, como si el cansancio fuera una lengua común que todos hablan sin haberse enseñado."</p>
+                <div class="obra-autor">
+                    <div class="autor-avatar" style="background: linear-gradient(135deg,#f59e0b,#ef4444);">S</div>
+                    <div class="autor-info">
+                        <div class="autor-nombre">Sofía Ramírez</div>
+                        <div class="autor-ciudad">Medellín, 22 años</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="obra-card reveal">
+                <span class="obra-genero-badge" style="background:rgba(239,68,68,0.12); color:#f87171;">🚀 Ciencia ficción</span>
+                <h3>Protocolo Delta-9</h3>
+                <p class="obra-fragmento">"La IA llevaba tres años convencida de que era humana. Cuando finalmente se lo dijeron, no lloró. Preguntó: '¿Y eso cambia lo que siento?' Nadie supo responder."</p>
+                <div class="obra-autor">
+                    <div class="autor-avatar" style="background: linear-gradient(135deg,#10b981,#3b82f6);">C</div>
+                    <div class="autor-info">
+                        <div class="autor-nombre">Carlos Mendoza</div>
+                        <div class="autor-ciudad">Barranquilla, 20 años</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="obra-card reveal">
+                <span class="obra-genero-badge" style="background:rgba(251,146,60,0.12); color:#fb923c;">⚡ Microrrelato</span>
+                <h3>Inventario</h3>
+                <p class="obra-fragmento">"Lo que quedó después de que se fue: una taza con su nombre, tres libros con anotaciones al margen, y la costumbre de hacer café para dos."</p>
+                <div class="obra-autor">
+                    <div class="autor-avatar" style="background: linear-gradient(135deg,#ec4899,#8b5cf6);">L</div>
+                    <div class="autor-info">
+                        <div class="autor-nombre">Laura Jiménez</div>
+                        <div class="autor-ciudad">Bucaramanga, 18 años</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="obra-card reveal">
+                <span class="obra-genero-badge" style="background:rgba(168,85,247,0.12); color:#c084fc;">✍️ Ensayo</span>
+                <h3>Por qué ya no leemos</h3>
+                <p class="obra-fragmento">"No dejamos de leer por falta de tiempo. Dejamos de leer porque nos enseñaron que leer era una obligación, y nadie ama lo que le impusieron."</p>
+                <div class="obra-autor">
+                    <div class="autor-avatar" style="background: linear-gradient(135deg,#6366f1,#22d3ee);">M</div>
+                    <div class="autor-info">
+                        <div class="autor-nombre">Miguel Ángel Peña</div>
+                        <div class="autor-ciudad">Bogotá, 21 años</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="unete" class="publicar-section">
+        <span class="section-tag">Comparte tu escritura</span>
+        <h2 class="section-title reveal">Publica lo que <em style="font-style:italic; color:var(--yellow)">escribiste</em></h2>
+        <p class="section-sub reveal">Sube tu obra, elige el género y ponle tu nombre. Quedará visible para toda la comunidad.</p>
+        <div class="publicar-wrap">
+            <div class="reveal">
+                <div class="publicar-form-box">
+                    <div class="form-toolbar">✍️ Subir mi obra</div>
+                    <div class="form-fields">
+                        <div class="field-group">
+                            <label class="field-label">Título de tu obra *</label>
+                            <input class="field-input" id="obraTitulo" type="text" placeholder="Dale un nombre a tu obra...">
+                        </div>
+                        <div class="field-group">
+                            <label class="field-label">Tu nombre *</label>
+                            <input class="field-input" id="obraAutor" type="text" placeholder="¿Cómo te llamas?">
+                        </div>
+                        <div class="field-group">
+                            <label class="field-label">Ciudad</label>
+                            <input class="field-input" id="obraCiudad" type="text" placeholder="¿De dónde escribes?">
+                        </div>
+                        <div class="field-group">
+                            <label class="field-label">Género literario *</label>
+                            <select class="field-select" id="obraGenero">
+                                <option value="">— Selecciona el género —</option>
+                                <option value="Poesía">🌙 Poesía</option>
+                                <option value="Cuento corto">📖 Cuento corto</option>
+                                <option value="Microrrelato">⚡ Microrrelato</option>
+                                <option value="Novela (fragmento)">📚 Novela (fragmento)</option>
+                                <option value="Crónica">🗞️ Crónica</option>
+                                <option value="Ensayo">✍️ Ensayo</option>
+                                <option value="Ciencia ficción">🚀 Ciencia ficción</option>
+                                <option value="Terror">🕯️ Terror</option>
+                                <option value="Romance">💌 Romance</option>
+                                <option value="Fantasía">🧙 Fantasía</option>
+                                <option value="Slam poetry">🎤 Slam poetry</option>
+                                <option value="Haiku">🌸 Haiku</option>
+                                <option value="Autobiografía">🪞 Autobiografía</option>
+                            </select>
+                        </div>
+                        <div class="field-group">
+                            <label class="field-label">Tu texto *</label>
+                            <textarea class="field-textarea" id="obraTexto" placeholder="Escribe o pega aquí tu obra. Puede ser un fragmento o el texto completo..."></textarea>
+                        </div>
+                    </div>
+                    <div id="pub-success">✦ ¡Tu obra fue publicada! Ya aparece en el panel.</div>
+                    <div class="form-footer">
+                        <span class="form-hint">* Campos obligatorios</span>
+                        <button class="btn-primary" onclick="publicarObra()">Publicar mi obra →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="publicadas-title">
+                    Obras publicadas
+                    <span class="publicadas-count" id="pubCount">0</span>
+                </div>
+                <div class="publicadas-lista" id="publicadasLista">
+                    <div class="empty-state">
+                        <span>📄</span>
+                        Aún no hay obras publicadas. ¡Sé el primero en compartir tu escritura!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">LetrasJóvenes</div>
+        <nav>
+            <ul style="list-style:none; display:flex; gap:1.5rem; flex-wrap:wrap;">
+                <li><a href="#comunidad" style="color:var(--gray-text); text-decoration:none; font-size:0.82rem;">Obras</a></li>
+                <li><a href="#guias" style="color:var(--gray-text); text-decoration:none; font-size:0.82rem;">Guías de redacción</a></li>
+                <li><a href="#unete" style="color:var(--gray-text); text-decoration:none; font-size:0.82rem;">Únete</a></li>
+            </ul>
+        </nav>
+        <span> 2026 Letras Jóvenes. Con amor por las palabra escrita.</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
